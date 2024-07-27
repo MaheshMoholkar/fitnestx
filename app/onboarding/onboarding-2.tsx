@@ -1,9 +1,10 @@
-import { View, Text, Image, Dimensions} from 'react-native'
+import { View, Text, Image, Dimensions } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { StatusBar } from 'expo-status-bar';
 import { router } from 'expo-router';
 import NextButton from '@/components/navigation/NextButton';
+import icons from '@/constants/Icons';
 
 export default function App() {
     const { height, width } = Dimensions.get('window');
@@ -22,10 +23,10 @@ export default function App() {
                 />
             </View>
             <Text className='text-3xl m-5 mt-12 font-semibold'>Get Burn</Text>
-            <Text className='px-5 font-light w-full'>Let’s keep burning, to achive yours goals, it hurts only temporarily, if you give up now you will be in pain forever</Text>
-            <NextButton 
-                handlePress={() => { router.push("onboarding/onboarding-3") }} 
-                imagePath={require("@/assets/images/next-2.png")} 
+            <Text className='px-5 text-slate-400 w-full'>Let’s keep burning, to achive yours goals, it hurts only temporarily, if you give up now you will be in pain forever</Text>
+            <NextButton
+                handlePress={() => { router.push("onboarding/onboarding-3") }}
+                icon={icons.next2}
             />
         </SafeAreaView>
     )

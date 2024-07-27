@@ -1,15 +1,17 @@
-import { Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity, Image, View } from "react-native";
 import React from "react";
 
 const CustomButton = ({
   title,
   handlePress,
+  icon,
   containerStyles,
   textStyles,
   isLoading,
 }: {
   title: string;
   handlePress: () => void;
+  icon?: any,
   containerStyles?: string;
   textStyles?: string;
   isLoading?: boolean;
@@ -20,9 +22,18 @@ const CustomButton = ({
       className={`rounded-xl min-h-[62px] justify-center items-center ${containerStyles}`}
       disabled={isLoading}
     >
-      <Text className={`font-semibold text-lg ${textStyles}`}>
-        {title}
-      </Text>
+      <View className="flex flex-row justify-center items-center">
+        {icon &&
+          <Image
+            source={icon}
+            className="w-6 h-6 mr-3 opacity-60"
+            resizeMode="contain"
+          />
+        }
+        <Text className={`font-semibold text-lg ${textStyles}`}>
+          {title}
+        </Text>
+      </View>
     </TouchableOpacity>
   );
 };
