@@ -12,7 +12,7 @@ export default function App() {
           <Text className='text-slate-400'>Everbody Can Train</Text>
           <CustomButton
             title="Get Started"
-            handlePress={() => {router.push("signup")}}
+            handlePress={() => {router.push("signup-1")}}
             containerStyles="px-28 rounded-full absolute bottom-4 bg-indigo-400"
             textStyles='text-white'
           />

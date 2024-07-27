@@ -10,10 +10,15 @@ const AuthLayout = () => {
           options={{ headerShown: false }}
         ></Stack.Screen>
         <Stack.Screen
-          name="signup"
+          name="signup-1"
+          options={{ headerShown: false }}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="signup-2"
           options={{ headerShown: false }}
         ></Stack.Screen>
       </Stack>
+      <StatusBar style="dark"/>
     </>
   );
 };

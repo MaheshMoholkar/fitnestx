@@ -1,5 +1,6 @@
 import React from 'react'
 import { Stack } from 'expo-router'
+import { StatusBar } from 'expo-status-bar'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           options={{ headerShown: false }}
         ></Stack.Screen>
       </Stack>
+      <StatusBar translucent={true} backgroundColor="transparent" />
     </>
   )
 }
