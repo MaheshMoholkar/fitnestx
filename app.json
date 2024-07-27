@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "quickcare",
-    "slug": "quickcare",
+    "name": "fitnestx",
+    "slug": "fitnestx",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "fitnestx",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -20,7 +20,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.z3rocool.quickcare"
+      "package": "com.z3rocool.fitnestx"
     },
     "web": {
       "bundler": "metro",

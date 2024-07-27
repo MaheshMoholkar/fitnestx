@@ -1,13 +1,15 @@
-import { Text, ScrollView } from "react-native";
+import { Text, ScrollView, View } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
   return (
     <SafeAreaView className="bg-white">
-      <ScrollView className="h-full">
-        <Text className="mt-7">signup</Text>
-      </ScrollView>
+      <View className="flex w-full justify-center">
+        <Text>Hey there,</Text>
+        <Text>Create an Account</Text>
+      </View>
+      
     </SafeAreaView>
   );
 }
