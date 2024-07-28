@@ -5,6 +5,7 @@ const eye = require("../assets/icons/eye.png")
 const email = require("../assets/icons/email.png")
 const lock = require("../assets/icons/lock.png")
 const calendar = require("../assets/icons/calendar.png")
+const scan = require("../assets/icons/scan.png")
 const height = require("../assets/icons/height.png")
 const weight = require("../assets/icons/weight.png")
 const gender = require("../assets/icons/gender.png")
@@ -14,7 +15,7 @@ const next2 = require("../assets/icons/next-2.png")
 const next3 = require("../assets/icons/next-3.png")
 const next4 = require("../assets/icons/next-4.png")
 const button = require("../assets/icons/button.png")
-
+const notification = require("../assets/icons/notification.png")
 export default {
   eyeHide,
   eye,
@@ -31,4 +32,6 @@ export default {
   next3,
   next4,
   button,
+  scan,
+  notification,
 };

@@ -63,7 +63,7 @@ export default function App() {
       <View className="h-8"></View>
       <View className="flex flex-row gap-2 w-full justify-center">
         <Text>Already have an account?</Text>
-        <Pressable onPress={() => { router.push("login") }}>
+        <Pressable onPress={() => { router.replace("login") }}>
           <Text className="text-indigo-400 underline">Login</Text>
         </Pressable>
       </View>

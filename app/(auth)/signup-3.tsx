@@ -25,7 +25,7 @@ export default function App() {
             <Text className='text-slate-500 self-center mb-3 flex-wrap w-2/3 text-center'>You are all set now, let's reach your goals together with us</Text>
             <CustomButton
                 title="Go To Home"
-                handlePress={() => { router.push("dashboard") }}
+                handlePress={() => { router.replace("dashboard") }}
                 containerStyles="px-28 rounded-full absolute bottom-4 bg-indigo-400 self-center"
                 textStyles='text-white'
             />

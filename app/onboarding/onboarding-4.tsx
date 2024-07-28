@@ -25,7 +25,7 @@ export default function App() {
             <Text className='text-3xl m-5 mt-12 font-semibold'>Improve Quality Sleep</Text>
             <Text className='px-5 text-slate-400 w-full'>Improve the quality of your sleep with us, good quality sleep can bring a good mood in the morning</Text>
             <NextButton
-                handlePress={() => { router.push("signup-1") }}
+                handlePress={() => { router.replace("signup-1") }}
                 icon={icons.next4}
             />
         </SafeAreaView>

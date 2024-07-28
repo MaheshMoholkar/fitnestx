@@ -2,6 +2,7 @@ import React from 'react';
 import { Tabs } from 'expo-router';
 import { AntDesign } from "@expo/vector-icons"
 import { useTabBarVisibility } from '@/hooks/useTabBarVisibility';
+import { View } from 'react-native';
 
 export default function TabLayout() {
   const { shouldHideTabBar } = useTabBarVisibility();
@@ -13,7 +14,7 @@ export default function TabLayout() {
           tabBarStyle: {
             height: 60,
             borderRadius: 50,
-            backgroundColor: '#a5b4fc',
+            backgroundColor: '#818cf8',
             display: shouldHideTabBar ? 'none' : 'flex',
           },
           headerShown: false,
@@ -43,19 +44,19 @@ export default function TabLayout() {
             tabBarShowLabel: false,
             tabBarIcon: ({ size, focused, color }) => {
               return (
-                <AntDesign
-                  style={{
-                    position: 'absolute',
-                    top: -30,
-                    backgroundColor: "#4f46e5",
-                    textAlign: "center",
-                    borderRadius: 30,
-                    padding: 12,
-                  }}
-                  name="qrcode"
-                  size={36}
-                  color="white"
-                />
+                <View style={{
+                  position: 'absolute',
+                  top: -30,
+                  borderRadius: 30,
+                  backgroundColor: "#4f46e5",
+                  padding: 12,
+                }}>
+                  <AntDesign
+                    name="qrcode"
+                    size={36}
+                    color="white"
+                  />
+                </View>
               );
             },
           }
